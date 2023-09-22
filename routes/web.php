@@ -19,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/api/users', [UserController::class, 'index']);
+// Route::get('/api/users', [UserController::class, 'index']);
+// Route::post('/api/users', [UserController::class, 'store']);
+
+Route::resource('/api/users', UserController::class);
 
 Route::get('{view}', ApplicationController::class)->where('view' , '(.*)');
