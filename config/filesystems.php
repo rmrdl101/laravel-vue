@@ -71,6 +71,7 @@ return [
 
     'links' => [
         public_path('storage') => storage_path('app/public'),
+        'C:\wamp64\www/laravel-vue' => base_path('public'),
     ],
 
 ];
